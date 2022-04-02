@@ -45,23 +45,22 @@ header{
 #main-description{
     display: flex;
     align-items: center;
-    min-height: 80vh;
-    background: var(--primary-black);
+    min-height: 100vh;
+    background: var(--primary-black)
     
 }
 #main-description .row{
     height: 100%;
 }
 #main-description .container{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    height: 100%;
+    
    align-content: center;
 }
 
 #main-description .col small{
     color: var(--font--red);
     font-size: 2.5rem;
+    
 }
 #main-description .col h2{
     color: rgb(255, 255, 255);
@@ -91,6 +90,7 @@ header{
     transition: all 0.8s;
     cursor: pointer;
 }
+
 .main-section-cards-skills{
     height: auto;
     
@@ -99,7 +99,6 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
     width: 100%;
     background: linear-gradient(to right, var(--secundary-balck) 0%, var(--secundary-balck) 50%, var(--primary-black) 50%, var(--primary-black) 100% );
 }
@@ -119,10 +118,7 @@ header{
     background: var(--card-black);
     color: #ffff;
 }
-.cards-projects .card:hover{
-    transform: scale(1.1);
-    transition: all 0.5s;
-}
+
 .cards-projects .card img{
    width: 40%;
    margin: 0 auto;
@@ -164,7 +160,7 @@ header{
     font-size: 1.2rem;
 }
 .container-experience .item:nth-child(1){
-   grid-row: 1 / 4;
+   grid-row: 1 / 3;
     
 }
 .container-experience .item:nth-child(1) h3{
@@ -184,8 +180,8 @@ header{
 }
 #main-projects .container .row:nth-child(1){
     background: var(--card-black);
-    height: 150px;
-    padding: 10px;
+    min-height: 150px;
+    padding: 10px 0;
 }
 #main-projects .container .row:nth-child(1) .col h2{
     color: #ffff;
@@ -253,6 +249,7 @@ header{
     background: url("./assets/img/Calculadora-2.png  ") center/cover no-repeat;
     width: 100%;
     height: 100%;
+    padding-right:5px;
 }
 .projects-card-item-3{
     background: url("./assets/img/pain-js.png  ") center/cover no-repeat;
@@ -267,8 +264,8 @@ header{
 .card-contact{
     min-height: 150px;
     background: var(--card-black);
-    padding: 10px;
-    margin-top: 30px;
+    padding: 10px 0;
+    margin-top: 10px;
     
 }
 .card-contact h2{
@@ -287,10 +284,13 @@ header{
     letter-spacing: 0.8px;
     background: var(--font--red);
 }
+.wave{
+    background: var(--secundary-balck);
+}
 #footer{
     width: 100%;
     height: auto;
-    background: var(--card-black);
+    background: var(--primary-black);
     padding: 10px 0;
 }
 #footer .container{
@@ -300,12 +300,59 @@ header{
     height: 10vh;
     
 }
-#footer .row .col:nth-child(1) img{
+#footer .row .col:nth-child(1) a {
   margin-right: 20px;
+  width: 40px;
+  height: 40px;
   
+}
+#footer .row .col:nth-child(1) a i{
+    font-size: 2.5rem;
+    color: #fff;
 }
 #footer .row .col:nth-child(2){
     color: #fff;
     align-self: center;
     font-size: 1.4rem;
+}
+
+@media  screen and (max-width:570px) {
+
+    #main-description .col small{
+        display: inline-block;
+       
+        font-size: 1.8rem;
+        width: 100%;
+        text-align: start;
+    }
+    #main-description .col h2{
+        
+        font-size: 3rem;
+        
+    }
+    #main-description .col p{
+        font-size: 1.2rem;
+        
+        
+    }
+    .main-description-container{
+        padding: 0 15px;
+    }
+    .container-experience .item h3{
+        font-size: 2rem;
+    }
+    .container-experience .item small{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .container-experience .item:nth-child(1) h3{
+        font-size: 4rem;
+        
+    }
+    .container-experience .item:nth-child(1) small{
+        font-size: 1.2rem;
+    }
+    
+    
+    
 }

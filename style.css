@@ -1,0 +1,311 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+:root{
+    --primary-black:#101010;
+    --secundary-balck:#171717;
+    --card-red:#c32626;
+    --btn-red:#b12121;
+    --card-black:#1d1d1d;
+    --font--red:#e6353a;
+}
+html{
+    font-size: 62.5%;
+    
+}
+header{
+    background: #101010;
+    min-height: 50px;
+}
+#header img{
+    width: 100px;
+    height: 40px;
+    object-fit: contain;
+}
+
+#list-header li a{
+    color: #fff ;
+    font-size: 1.3rem;
+    margin-right: 20px;
+    margin-top: 5px;
+    padding: 5px 10px;
+    font-weight: normal;
+    
+}
+
+
+#list-header li a:hover{
+    background: var(--card-red);
+    transition: ease 0.5s;
+}
+
+#main-description{
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    background: var(--primary-black);
+    
+}
+#main-description .row{
+    height: 100%;
+}
+#main-description .container{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100%;
+   align-content: center;
+}
+
+#main-description .col small{
+    color: var(--font--red);
+    font-size: 2.5rem;
+}
+#main-description .col h2{
+    color: rgb(255, 255, 255);
+    font-size: 5rem;
+    margin-bottom: 5px;
+}
+#main-description .col p{
+    font-size: 1.6rem;
+    color: rgb(168, 157, 157);
+}
+#main-description .col button{
+    margin-top: 5px;
+    border-radius: 0;
+    border: none;
+    width: 100px;
+    height: 40px;
+    font-size: 1.4rem;
+    letter-spacing: 0.8px;
+    background: var(--font--red);
+}
+#main-description .container .col img{
+    width: 100%;
+    
+}
+#main-description .container .col img:hover{
+    transform: scale(1.1);
+    transition: all 0.8s;
+    cursor: pointer;
+}
+.main-section-cards-skills{
+    height: auto;
+    
+}
+.main-cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    width: 100%;
+    background: linear-gradient(to right, var(--secundary-balck) 0%, var(--secundary-balck) 50%, var(--primary-black) 50%, var(--primary-black) 100% );
+}
+
+
+.cards-projects{
+    padding: 80px  50px 80px 50px;
+}
+.cards-projects h1{
+    color: #fff;
+  
+}
+.cards-projects .card{
+    padding-top: 8px;
+    min-height: 180px;
+    margin-top: 15px;
+    background: var(--card-black);
+    color: #ffff;
+}
+.cards-projects .card:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.cards-projects .card img{
+   width: 40%;
+   margin: 0 auto;
+    object-fit: cover;
+}
+.cards-projects .card h2{
+    margin-top: 10px;
+    color: var(--font--red);
+  
+}
+.cards-projects .card p{
+    font-size: 1.4rem;
+    color: rgb(168, 157, 157);
+}
+
+.container-experience{
+    display: grid;
+    gap: 8px;
+    margin-top: 15px;
+    height: 200px;
+    grid-template: repeat(2,1fr) / repeat(3,1fr);
+   
+}
+.container-experience .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--card-black);
+}
+.container-experience .item h3{
+    color: var(--font--red);
+    font-size: 3rem;
+    font-weight: bold;
+    
+}
+.container-experience .item small{
+    color: rgb(168, 157, 157);
+    font-size: 1.2rem;
+}
+.container-experience .item:nth-child(1){
+   grid-row: 1 / 4;
+    
+}
+.container-experience .item:nth-child(1) h3{
+    font-size: 6rem;
+    
+}
+.container-experience .item:nth-child(1) small{
+    font-size: 1.5rem;
+}
+#main-projects{
+    height: auto;
+    background: linear-gradient(to top, var(--secundary-balck) 0%, var(--secundary-balck) 50%, var(--primary-black) 50%, var(--primary-black) 100% );
+}
+#main-projects .container{
+    padding: 80px  50px 80px 50px;
+    
+}
+#main-projects .container .row:nth-child(1){
+    background: var(--card-black);
+    height: 150px;
+    padding: 10px;
+}
+#main-projects .container .row:nth-child(1) .col h2{
+    color: #ffff;
+    
+}
+#main-projects .container .row:nth-child(1) .col p{
+    color: rgb(168, 157, 157);
+    font-size: 1.4rem;
+}
+#main-projects .container .row:nth-child(1) .col button{
+    border-radius: 0;
+    border: none;
+    width: 100px;
+    height: 40px;
+    font-size: 1.4rem;
+    letter-spacing: 0.8px;
+    background: var(--font--red);
+}
+#main-projects .container .row:nth-child(2) .card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+
+.overlay{
+    display: flex;
+    align-items: center;
+    place-content: center center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background: #1717173d;
+    transition: .5s ease;
+}
+#main-projects .container .row:nth-child(2) .card:hover .overlay{
+    height: 100%;
+}
+#main-projects .container .row:nth-child(2) .card a{
+    color: rgb(224, 217, 217);
+}
+.overlay h2{
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+.overlay div span{
+    font-size: 1.4rem;
+}
+.projects-card-item-1{
+    background: url("./assets/img/sitio-ventas-2.png") center/cover no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.projects-card-item-2{
+    background: url("./assets/img/Calculadora-2.png  ") center/cover no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.projects-card-item-3{
+    background: url("./assets/img/pain-js.png  ") center/cover no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.projects-card-item-4{
+    background: url("./assets/img/platzi.png  ") center/cover no-repeat;
+  
+}
+
+.card-contact{
+    min-height: 150px;
+    background: var(--card-black);
+    padding: 10px;
+    margin-top: 30px;
+    
+}
+.card-contact h2{
+    color: #fff;
+}
+.card-contact p{
+    color: rgb(168, 157, 157);
+    font-size: 1.4rem;
+}
+.card-contact button{
+    border-radius: 0;
+    border: none;
+    width: 100px;
+    height: 40px;
+    font-size: 1.4rem;
+    letter-spacing: 0.8px;
+    background: var(--font--red);
+}
+#footer{
+    width: 100%;
+    height: auto;
+    background: var(--card-black);
+    padding: 10px 0;
+}
+#footer .container{
+    padding: 0 50px 10px 50px;
+}
+#footer .row{
+    height: 10vh;
+    
+}
+#footer .row .col:nth-child(1) img{
+  margin-right: 20px;
+  
+}
+#footer .row .col:nth-child(2){
+    color: #fff;
+    align-self: center;
+    font-size: 1.4rem;
+}

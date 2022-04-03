@@ -318,30 +318,29 @@ header{
 
 @media  screen and (max-width:570px) {
     #main-description {
+
         align-items: flex-start;
     }
 
     .main-description-container{
-        margin-top: 80px;
+        margin-top: 90px;
     }
 
-
-    #main-description .col small{
-        display: inline-block;
-       font-size: 1.8rem;
-        width: 100%;
-        text-align: start;
+#main-description .col small{
+      display: inline-block;
+      font-size: 2rem;
+       width: 100%;
+     text-align: start;
     }
     #main-description .col h2{
-        font-size: 3.5rem;
+    font-size: 3.5rem;
         
     }
     #main-description .col p{
         font-size: 1.5rem;
         line-height: normal;
-        
-        
     }
+    
     .main-description-container{
         padding: 0 15px;
     }

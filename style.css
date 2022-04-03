@@ -317,6 +317,7 @@ header{
 }
 
 @media  screen and (max-width:570px) {
+<<<<<<< HEAD
     #main-description{
         align-items: flex-start;
     }
@@ -327,17 +328,32 @@ header{
     #main-description .col small{
         display: inline-block;
         font-size: 2.2rem;
+=======
+
+    #main-description .col small{
+        display: inline-block;
+       
+        font-size: 1.8rem;
+>>>>>>> c8c9de7ef1a2ae67f90f2f726f51c67789d732af
         width: 100%;
         text-align: start;
     }
     #main-description .col h2{
         
+<<<<<<< HEAD
         font-size: 3.5rem;
         
     }
     #main-description .col p{
         font-size: 1.5rem;
         line-height: normal;
+=======
+        font-size: 3rem;
+        
+    }
+    #main-description .col p{
+        font-size: 1.2rem;
+>>>>>>> c8c9de7ef1a2ae67f90f2f726f51c67789d732af
         
         
     }

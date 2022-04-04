@@ -317,23 +317,20 @@ header{
 }
 
 @media  screen and (max-width:570px) {
-    #main-description {
+  
 
-        align-items: flex-start;
-    }
-
-    .main-description-container{
-        margin-top: 90px;
-    }
 
 #main-description .col small{
       display: inline-block;
-      font-size: 2rem;
+      font-size: 1.5rem;
        width: 100%;
      text-align: start;
+     
     }
     #main-description .col h2{
-    font-size: 3.5rem;
+        font-size: 3.5rem;
+        margin-bottom: 15px;
+        padding-bottom: 5px;
         
     }
     #main-description .col p{
@@ -358,6 +355,10 @@ header{
     .container-experience .item:nth-child(1) small{
         font-size: 1.2rem;
     }
+.overlay{
+    height: 100%;
+}
+
     
     
     

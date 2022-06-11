@@ -18,6 +18,7 @@ html{
 }
 header{
     background: #101010;
+    background: var(--secundary-balck);
     min-height: 50px;
 }
 #header img{
@@ -26,8 +27,10 @@ header{
     object-fit: contain;
 }
 
+
 #list-header li a{
-    color: #fff ;
+    /* color: #fff ; */
+    color:rgb(187, 187, 187) ;
     font-size: 1.3rem;
     margin-right: 20px;
     margin-top: 5px;
@@ -41,13 +44,20 @@ header{
     background: var(--card-red);
     transition: ease 0.5s;
 }
+.scroll-spy{
+    background: var(--card-red);
+    transition: ease 0.5s;
+    color: #fff !important;
+}
+
+
 
 #main-description{
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background: var(--primary-black)
-    
+    /* background: var(--primary-black) */
+    background: url("./assets/icons/layered-peaks-haikei.svg") center/cover no-repeat;
 }
 #main-description .row{
     height: 100%;
@@ -58,7 +68,8 @@ header{
 }
 
 #main-description .col small{
-    color: var(--font--red);
+    /* color: var(--font--red); */
+    color:rgb(255, 255, 255) ;
     font-size: 2.5rem;
     
 }
@@ -277,11 +288,10 @@ header{
     font-size: 1.4rem;
 }
 .form-contact{
-    width: 90%;
-    /* margin: 0 auto; */
     display: flex;
+    width: 90%;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 .form-contact label {
@@ -291,18 +301,52 @@ header{
 }
 .form-contact label input{
     min-height: 35px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding: 0 5px;
     border: none;
     border-bottom: 0.5px solid rgb(168, 157, 157);
     background: transparent;
     outline: none;
-    color:rgba(100, 92, 92, 0.781);
+    color:rgba(245, 245, 245, 0.781);
     
 }
 .form-contact label input::placeholder{
     color: rgba(100, 92, 92, 0.781);
 }
+.response-form{
+    display: none;
+    width: 70%;
+    margin-top: 5px;
+    height: 30px;
+    background: rgba(255, 0, 0, 0.658);
+    
+}
+.response-form p{
+    color: #fff;
+    text-align: center;
+}
+
+.spinner-4 {
+    display: none;
+    margin-top:5px ;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    padding:1px;
+    background:conic-gradient(#0000 10%,#f03355) content-box;
+    -webkit-mask:
+      repeating-conic-gradient(#0000 0deg,#000 1deg 20deg,#0000 21deg 36deg),
+      radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 calc(100% - 8px));
+    -webkit-mask-composite: destination-in;
+    mask-composite: intersect;
+    animation:s4 1s infinite steps(10);
+  }
+  @keyframes s4 {to{transform: rotate(1turn)}}
+  .message-success{
+      display: none;
+      margin-top: 3px;
+      text-align: center;
+  }
 .card-contact button{
     border-radius: 0;
     border: none;
